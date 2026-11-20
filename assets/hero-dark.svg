@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="300" viewBox="0 0 1000 300" role="img" aria-label="Product engineer. AI and interfaces.">
+<style>
+.big{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:46px;font-weight:600;letter-spacing:-1.6px}
+.ui{opacity:0;animation:pop 9s cubic-bezier(.2,.8,.2,1) infinite}
+@keyframes pop{0%{opacity:0;transform:scale(.96)}4%,90%{opacity:1;transform:none}96%,100%{opacity:0}}
+.draw{stroke-dasharray:400;stroke-dashoffset:400;animation:draw 9s ease-out infinite}
+@keyframes draw{0%,35.56%{stroke-dashoffset:400}50.00%,90%{stroke-dashoffset:0}96%,100%{stroke-dashoffset:400}}
+.caret{animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.fade{animation:fa 9s infinite}
+@keyframes fa{0%,92%{opacity:1}97%{opacity:0}100%{opacity:1}}
+@keyframes r0{0%,10.00%{transform:translateX(0)}18.89%,100%{transform:translateX(450px)}}.cv0{animation:r0 9s steps(5,end) infinite}@keyframes r1{0%,20.00%{transform:translateX(0)}28.89%,100%{transform:translateX(450px)}}.cv1{animation:r1 9s steps(5,end) infinite}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}.ui{opacity:1}.draw{stroke-dashoffset:0}.cv0,.cv1{display:none}}
+</style>
+<rect x=".5" y=".5" width="999" height="299" rx="16" fill="#0a0c10" stroke="#21262d"/>
+<text x="56" y="76" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#6e7681">&gt; alex</text>
+<rect class="caret" x="112" y="65" width="7" height="14" fill="#6e7681"/>
+<g class="fade"><text x="56" y="158" class="big" fill="#f0f6fc">Product engineer.</text><text x="56" y="214" class="big" fill="#6e7681">AI &amp; interfaces.</text><rect class="cv0" x="52" y="112" width="440" height="60" fill="#0a0c10"/><rect class="cv1" x="52" y="168" width="440" height="60" fill="#0a0c10"/></g>
+
+<rect class="ui" style="animation-delay:-6.10s" x="600" y="56" width="344" height="188" rx="12" fill="#161b22"/>
+<polyline class="draw" points="632.0,184.0 656.0,169.5 680.0,159.8 704.0,157.6 728.0,161.8 752.0,168.6 776.0,172.7 800.0,170.3 824.0,160.5 848.0,145.9 872.0,131.5" fill="none" stroke="#7ee0b5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect class="ui" style="animation-delay:-4.50s;transform-origin:900px 206px" x="884" y="190" width="32" height="32" rx="8" fill="#f0f6fc"/>
+
+</svg>
