@@ -27,12 +27,12 @@ def pct(t):
 
 
 def hero(name, c):
-    W, H = 1000, 300
+    W, H = 1000, 260
     lines = [("Product engineer.", c["text"]), ("AI &amp; interfaces.", c["muted"])]
     text, covers, kf = "", "", ""
     for i, (line, fill) in enumerate(lines):
         start, end = 0.9 + i * 0.9, 1.7 + i * 0.9
-        y = 158 + i * 56
+        y = 146 + i * 56
         text += f'<text x="56" y="{y}" class="big" fill="{fill}">{line}</text>'
         covers += f'<rect class="cv{i}" x="52" y="{y - 46}" width="440" height="60" fill="{c["card"]}"/>'
         kf += (f"@keyframes r{i}{{0%,{pct(start)}{{transform:translateX(0)}}{pct(end)},100%{{transform:translateX(450px)}}}}"
@@ -98,10 +98,9 @@ def hero(name, c):
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Product engineer. AI and interfaces.">
 <style>{css}</style>
 <rect x=".5" y=".5" width="{W - 1}" height="{H - 1}" rx="16" fill="{c['card']}" stroke="{c['stroke']}"/>
-<text x="56" y="76" font-family="{MONO}" font-size="13" fill="{c['muted']}">&gt; alex</text>
-<rect class="caret" x="112" y="65" width="7" height="14" fill="{c['muted']}"/>
+<text x="56" y="72" font-family="{MONO}" font-size="13" fill="{c['muted']}">&gt; alex</text>
+<rect class="caret" x="112" y="61" width="7" height="14" fill="{c['muted']}"/>
 <g class="fade">{text}{covers}</g>
-{ui}
 </svg>
 """
     (OUT / f"hero-{name}.svg").write_text(svg)
