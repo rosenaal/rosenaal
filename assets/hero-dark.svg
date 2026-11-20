@@ -1,24 +1,45 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="300" viewBox="0 0 1000 300" role="img" aria-label="Product engineer. AI and interfaces.">
 <style>
 .big{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:46px;font-weight:600;letter-spacing:-1.6px}
-.ui{opacity:0;animation:pop 9s cubic-bezier(.2,.8,.2,1) infinite}
-@keyframes pop{0%{opacity:0;transform:scale(.96)}4%,90%{opacity:1;transform:none}96%,100%{opacity:0}}
-.draw{stroke-dasharray:400;stroke-dashoffset:400;animation:draw 9s ease-out infinite}
-@keyframes draw{0%,35.56%{stroke-dashoffset:400}50.00%,90%{stroke-dashoffset:0}96%,100%{stroke-dashoffset:400}}
+.ui{opacity:0}
+.in{animation:a1 9s cubic-bezier(.2,.8,.2,1) infinite}
+.tg2{animation:a2 9s cubic-bezier(.2,.8,.2,1) infinite}
+@keyframes a1{0%,3.33%{opacity:0;transform:scale(.96)}7.78%,90%{opacity:1;transform:none}96%,100%{opacity:0}}
+@keyframes a2{0%,54.44%{opacity:0;transform:scale(.9)}58.33%,90%{opacity:1;transform:none}96%,100%{opacity:0}}
+.typ{animation:typ 9s steps(13,end) infinite}
+@keyframes typ{0%,30.00%{transform:translateX(0)}42.22%,100%{transform:translateX(126px)}}
+.thinkg{opacity:0;animation:tg 9s infinite}
+@keyframes tg{0%,43.89%{opacity:0}44.44%,53.33%{opacity:1}54.44%,100%{opacity:0}}
+.think{animation:th .6s ease-in-out infinite alternate}
+@keyframes th{from{opacity:.25}to{opacity:1}}
+.track{fill:#21262d;animation:tr 9s infinite}
+@keyframes tr{0%,62.22%{fill:#21262d}65.00%,100%{fill:#7ee0b5}}
+.knob{animation:kn 9s cubic-bezier(.3,1.4,.5,1) infinite}
+@keyframes kn{0%,62.22%{transform:translateX(0)}66.11%,100%{transform:translateX(34px)}}
 .caret{animation:blink 1s steps(1) infinite}
 @keyframes blink{50%{opacity:0}}
 .fade{animation:fa 9s infinite}
 @keyframes fa{0%,92%{opacity:1}97%{opacity:0}100%{opacity:1}}
 @keyframes r0{0%,10.00%{transform:translateX(0)}18.89%,100%{transform:translateX(450px)}}.cv0{animation:r0 9s steps(5,end) infinite}@keyframes r1{0%,20.00%{transform:translateX(0)}28.89%,100%{transform:translateX(450px)}}.cv1{animation:r1 9s steps(5,end) infinite}
-@media (prefers-reduced-motion:reduce){*{animation:none!important}.ui{opacity:1}.draw{stroke-dashoffset:0}.cv0,.cv1{display:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}.ui{opacity:1}.typ,.thinkg{display:none}.track{fill:#7ee0b5}.knob{transform:translateX(34px)}.cv0,.cv1{display:none}}
 </style>
 <rect x=".5" y=".5" width="999" height="299" rx="16" fill="#0a0c10" stroke="#21262d"/>
 <text x="56" y="76" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="13" fill="#6e7681">&gt; alex</text>
 <rect class="caret" x="112" y="65" width="7" height="14" fill="#6e7681"/>
 <g class="fade"><text x="56" y="158" class="big" fill="#f0f6fc">Product engineer.</text><text x="56" y="214" class="big" fill="#6e7681">AI &amp; interfaces.</text><rect class="cv0" x="52" y="112" width="440" height="60" fill="#0a0c10"/><rect class="cv1" x="52" y="168" width="440" height="60" fill="#0a0c10"/></g>
 
-<rect class="ui" style="animation-delay:-6.10s" x="600" y="56" width="344" height="188" rx="12" fill="#161b22"/>
-<polyline class="draw" points="632.0,184.0 656.0,169.5 680.0,159.8 704.0,157.6 728.0,161.8 752.0,168.6 776.0,172.7 800.0,170.3 824.0,160.5 848.0,145.9 872.0,131.5" fill="none" stroke="#7ee0b5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-<rect class="ui" style="animation-delay:-4.50s;transform-origin:900px 206px" x="884" y="190" width="32" height="32" rx="8" fill="#f0f6fc"/>
+<g class="ui in">
+<rect x="612" y="70" width="332" height="46" rx="23" fill="#161b22" stroke="#21262d"/>
+<path d="M638,85 C639,91 640,92 646,93 C640,94 639,95 638,101 C637,95 636,94 630,93 C636,92 637,91 638,85Z" fill="#7ee0b5"/>
+<text x="658" y="98" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace" font-size="15" fill="#f0f6fc">make a toggle</text>
+<rect class="typ" x="656" y="80" width="124.3" height="26" fill="#161b22"/>
+<circle cx="921" cy="93" r="14" fill="#f0f6fc"/>
+<path d="M921,99 V87 M916,92 L921,87 L926,92" stroke="#0a0c10" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g class="thinkg"><circle class="think" style="animation-delay:-9.00s" cx="764.0" cy="196" r="3.5" fill="#6e7681"/><circle class="think" style="animation-delay:-8.85s" cx="778.0" cy="196" r="3.5" fill="#6e7681"/><circle class="think" style="animation-delay:-8.70s" cx="792.0" cy="196" r="3.5" fill="#6e7681"/></g>
+<g class="ui tg2" style="transform-origin:778.0px 196px">
+<rect class="track" x="740.0" y="175" width="76" height="42" rx="21"/>
+<circle class="knob" cx="761.0" cy="196" r="16" fill="#ffffff"/>
+</g>
 
 </svg>
